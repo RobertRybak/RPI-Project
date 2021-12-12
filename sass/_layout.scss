@@ -1,0 +1,13 @@
+.container {
+    display: flex;  
+    // align-items: center;
+    justify-content: center;
+    width: 840px;
+    height: 840px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: $clr-bg-color;
+    box-shadow: 13px 13px 20px $font-color,
+    -13px -13px 20px $clr-white-color;
+}
