@@ -11,7 +11,7 @@
 
 <body>
   <div class="container">
-    <div class="box">
+    <div class="box box-1">
       <div class="box-item">
         <img src="img/login.svg" alt="login-image">
       </div>
@@ -20,6 +20,7 @@
       </div>
       <form class="box-item box-file" action="">
         <div class="box-file-1-1">
+          <span class="i-lock"></span>
           <input type="text" name="" id="" placeholder="username">
         </div>
         <div class="box-file-1-1">
@@ -30,7 +31,7 @@
         </div>
       </form>
       <div class="box-item">
-        <button class="btn btn-primary btn-blue">LOG IN</button>
+        <button id="login-btn" class="btn btn-primary btn-blue">LOG IN</button>
       </div>
       <div class="box-item">
         <span>Or connect with social</span>
@@ -52,13 +53,13 @@
       <div class="box-item">
         <h2 class="title">Forgot Password</h2>
       </div>
-      <form class="box-item" action="">
+      <form class="box-item box-file" action="">
         <div class="box-file-1-1">
-          <input type="text" name="" id="">
+          <input type="text" name="" id="" placeholder="username">
         </div>
       </form>
       <div class="box-item">
-        <button class="btn-primary">Reset</button>
+        <button id="reset-btn" class="btn btn-primary btn-blue">Reset</button>
       </div>
       <div class="box-item">
         <span>Already have an account? <a href="#" class="btn-link">Login here</a></span>
@@ -67,33 +68,37 @@
 
     <div class="box box-3" style="display: none;">
       <div class="box-item">
-        <img src="img/online_payments.svg" alt="payments-image">
-      </div>
-      <div class="box-item">
         <h2 class="title">Get Pro Account</h2>
       </div>
-      <form class="box-item" action="">
+      <div class="box-item">
+        <img src="img/online_payments.svg" alt="payments-image">
+      </div>
+      <form class="box-item box-file" action="">
         <div class="box-file-1-1">
-          <input type="text" name="" id="">
+          <input type="text" name="" id="" placeholder="Card Number">
         </div>
-        <div class="box-file-1-2">
-          <div>
-            <input type="text" name="" id="">
+        <div class="box-item mb-10">
+          <div class="box-btn-1-2">
+            <input type="text" name="" id="" placeholder="MM/YY">
           </div>
-          <div>
-            <input type="text" name="" id="">
-            <a class="btn-link">Forgot Password?</a>
+          <div class="box-btn-1-2">
+            <input type="text" name="" id="" placeholder="CVV">
+            <div class="text-right mt-10">
+              <a class="btn-link">What’s this?</a>
+            </div>
           </div>
         </div>
         <div class="box-file-1-1">
-          <input type="text" name="" id="">
+          <input type="text" name="" id="" placeholder="ZIP/Postal Code">
         </div>
       </form>
       <div class="box-item">
-        <button class="btn-primary">LOG IN</button>
+        <button id="upgrade-btn" class="btn btn-primary btn-red">UPGRADE</button>
       </div>
     </div>
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
