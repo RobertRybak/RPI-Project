@@ -22,9 +22,16 @@ input[type=text], input[type=password] {
   width: 100%;
   color: inherit;
 
-  // .icon {
-  //   background-image: ;
-  // }
+  &.input-icon-user {
+      background: url('../img/user.png') no-repeat scroll 10px 14px;
+      padding-left:35px;
+      border-color:$clr-blue-primary;
+      color:$clr-blue-primary;
+  }
+    &.input-icon-password {
+      background: url('../img/lock.png') no-repeat scroll 9px 12px;
+      padding-left:35px;
+  }
 }
 
 //buttons
