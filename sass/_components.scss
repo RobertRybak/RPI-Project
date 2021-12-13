@@ -36,15 +36,23 @@ input[type=text], input[type=password] {
   font-size: 16px;
   width: 100%;
   cursor: pointer;
+  transition: transform .3s ease-in-out;
 
     &-primary {
       padding: 15px;
 
       &.btn-blue{
       background-color: $clr-blue-primary;
+      &:focus {
+         box-shadow: 0 0 10px rgba($clr-blue-primary, .4);
+      }
+      
       }
       &.btn-red {
       background-color: $clr-red-primary;
+            &:focus {
+         box-shadow: 0 0 10px rgba($clr-red-primary, .4);
+      }
       }
 
 }
@@ -53,11 +61,27 @@ input[type=text], input[type=password] {
 
     &.btn-fb {
       background-color: $clr-blue-fb;
+             &:focus {
+         box-shadow: 0 0 10px rgba($clr-blue-fb, .4);
+      }
     }
     &.btn-google{
       background-color: $clr-red-google;
+             &:focus {
+         box-shadow: 0 0 10px rgba($clr-red-google, .4);
+      }
     }
   }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba($clr-black-color, .2)
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($clr-black-color, .2)
+  }
+
 }
 
 

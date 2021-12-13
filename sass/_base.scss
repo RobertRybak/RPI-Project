@@ -13,6 +13,11 @@ $clr-red-google:#F14436;
   *::before  {
     box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba($clr-black-color, .2);
+}
+
 img {
   max-width: 100%;
   height: auto;
