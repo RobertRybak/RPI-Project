@@ -11,3 +11,15 @@
     box-shadow: 13px 13px 20px $font-color,
     -13px -13px 20px $clr-white-color;
 }
+
+.box {
+      &-btn-1-2 {
+      flex: 1;
+      &:first-child{ 
+        margin-right: 7px;
+      }
+      &:last-child{
+        margin-left: 7px;
+      }
+    }
+}
